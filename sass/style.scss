@@ -26,7 +26,8 @@ body {
 }
 
 .container {
-    width: calc(100vw - 500px); //obliczenie szerokości kontenera
+    width: 100%;
+    @media(min-width: 1000px) {width: calc(100vw - 500px);}
     max-width: 1140px; //maksymalna szerokosc elementu (standard)
     margin: 0 auto; //wycentrowanie w poziomie
     padding: 0 20px;
@@ -51,6 +52,7 @@ section {
     justify-content: flex-end;
     list-style: none;
     gap: 30px; //odstep miedzy zakladkami menu
+    @media (max-width: 700px) {display: block;}
 }
 
 .menu a {
